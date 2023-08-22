@@ -1,0 +1,100 @@
+query {
+  users{
+    id
+    name
+    age
+  }
+}
+
+query {
+    user(id: "64c2365ca6c83a9569c75f97") {
+      id
+      name
+      age
+    }
+  }
+
+
+mutation {
+  createUser(input: {
+    name: "Ferdy",
+    age: 25,
+  }) {
+    id
+    name
+    age
+  }
+}
+
+mutation {
+  deleteUser(id: "64c32c336eebe4f98957ee05") {
+    id
+    name
+    age
+  }
+}
+
+
+
+mutation {
+  updateUser(id: "64c32c336eebe4f98957ee06", name: "New Name", age: 30)  {
+    id
+    name
+    age
+  }
+}
+
+
+
+// company
+
+query {
+  companies {
+    id
+    name
+    address
+    phoneNumber
+  }
+}
+
+
+query {
+  company(id: "COMPANY_ID_HERE") {
+    id
+    name
+    address
+    phoneNumber
+  }
+}
+
+
+mutation {
+  createCompany(input: {
+    name: "Gamamulti",
+    address: "jl. Sendowo",
+    phoneNumber: "0893233223"
+  }) {
+    id
+    name
+    address
+    phoneNumber
+  }
+}
+
+mutation {
+  updateCompany(id: "64c9cbf0e1d8fd276bad3c48", name: "testing", address: "jl. test", phoneNumber:"0891232")  {
+    id
+    name
+    address
+    phoneNumber
+  }
+}
+
+mutation {
+  deleteCompany(id: "64c9cbf0e1d8fd276bad3c48") {
+     id
+    name
+    address
+    phoneNumber
+  }
+}
