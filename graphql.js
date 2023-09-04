@@ -5,13 +5,13 @@ const mongoose = require('mongoose');
 const UserSchema = new mongoose.Schema({
   name: String,
   age: Number,
-});
+}, { versionKey: false });
 
 const CompanySchema = new mongoose.Schema({
   name: String,
   address: String,
   phoneNumber: String,
-});
+}, { versionKey: false });
 
 const User = mongoose.model('User', UserSchema);
 const Company = mongoose.model('Company', CompanySchema);

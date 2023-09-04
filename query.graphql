@@ -59,7 +59,7 @@ query {
 
 
 query {
-  company(id: "COMPANY_ID_HERE") {
+  company(id: "64eec33c5b06e4e4feee28f5") {
     id
     name
     address
@@ -71,7 +71,7 @@ query {
 mutation {
   createCompany(input: {
     name: "Gamamulti",
-    address: "jl. Sendowo",
+    address: "jl. acasia",
     phoneNumber: "0893233223"
   }) {
     id
